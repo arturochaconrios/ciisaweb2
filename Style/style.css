@@ -1,0 +1,233 @@
+
+
+
+* {
+padding: 0px;
+margin: 0px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: 100%;
+}
+
+.bodigaleria3{
+  background-color: rgba(239, 15, 15, 0.792);
+  position: absolute;
+            }
+
+/*CLASS DE PAGINA INDEX*/  
+.posicion{
+  background-color: black;
+  color: aliceblue;
+  
+
+}
+.color{
+  color: var(--bs-heading-color);
+  ;
+  
+  font-size: 1cap;
+}
+
+.color2{
+
+  color: blanchedalmond;
+  font-size: -10cap;
+}
+.header1{
+  margin-right:3% ;
+  margin-left: 3% ;
+}
+.header {
+  margin-right: 3%;
+  margin-left: 3%;
+  width : 93% ;
+  position: fixed;
+  border: solid 4px black;
+  border-radius: 10px;
+  background-color: black
+        }
+.nav {
+  padding: 1px ;
+  display: flex;
+  float: left; 
+    }
+.nav ul {
+  float: left;
+  list-style: none;
+  overflow: hidden; 
+        }
+.nav ul li {
+  font-family: initial;
+  font-size: 16px;
+           }
+.nav ul li a {
+  display: block;
+  padding: 4px 10px;
+  color: #f0f7f0;
+  text-decoration: none;
+             }
+.nav ul li:hover {
+  color: rgb(255, 153, 0,1);
+  background: rgb(168, 164, 164);
+  border-radius: 10px;
+                 }
+.linea {
+  color: aliceblue;
+  padding: 5px 15px;
+  display: flex;
+       }
+.hola {
+  display: flex;
+  padding-top: 45px;
+  margin-right: 3%;
+  margin-left: 3%;
+ justify-content: space-around;     
+      }
+.holaa {
+  scroll-behavior: smooth;
+  height: 65%;
+  width: 60%;
+       }
+
+.chao {
+  display: flex;
+  height: 550px;
+  width: 600px;
+  border-radius: 20px;
+      }
+.CONTENIDO {
+  background-color: black;
+  width: 50%;
+  display: flex;
+  flex-direction:row;
+  align-items:left;
+  color: white;
+  font-size: 10x;
+  border-radius: 20px;
+           }
+.centra {
+  width: 7%;       
+        }
+.central {
+  width: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+         }
+.header2 {
+  margin-right: 3%;
+  margin-left: 3%;
+  width : 93% ;
+  position: fixed;
+  border: solid 5px rgb(17, 16, 16);
+  border-radius: 10px;
+  background-color: rgb(14, 12, 12)       
+          }
+.PALLADO {
+  display: flex;
+  float: right;
+  border-radius: 80px;
+                   }
+/*CLASS DE PAGINA GALERIA*/
+
+.fotos{
+  margin-right: 3%;
+  margin-left: 3%;
+  width : 30px ;
+  height: 50px;
+}
+
+.bodigaleria{
+  background-color: black;
+  position: absolute;
+            }
+.header3 {
+  margin-right: 3%;
+  margin-left: 3%;
+  width : 93% ;
+  position: absolute;
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: black
+         }
+ .menu {
+  display: flex;
+  justify-content:center ;
+  position: relative;
+  min-width: 250px;
+  height: 50px;
+       }
+.menu2 {
+  border: none;
+  appearance: none;
+  padding: 0 30px 0 20px;
+  width: 25%;
+  color: white;
+  background-color: rgb(82, 82, 182);
+  font-size: 20px;
+  border-radius: 50px;
+       }
+.gal2 {
+  display: flex;
+  height: 400px;
+  width: 630px;
+  border-radius: 20px;
+      }
+.gal3 {
+  display: flex;
+  height: 400px;
+  width: 900px;
+  border-radius: 20px;
+      }
+.gal4 {
+  display: flex;
+  height: 300px;
+  width: 530px;
+  border-radius: 20px;
+      }
+.letras {
+  border-width: 2rem;
+  color: #f0f7f0;
+  font-size: 0.9rem;
+  border-radius: 20px;      
+        }
+.segundo {
+  border: solid;
+  border-radius: 10%;
+  padding-top: 5%;
+  bottom: 4rem;
+  right: 7rem;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: -1;
+         }
+.tercero {
+  position: fixed;
+  bottom: 5rem;    
+  margin-left: 1200PX;   
+  height: 350PX; 
+         }
+.letra{
+  display: flex;
+
+}
+/*CLASS DE PAGINA CONTACTO*/
+
+.bodigaleria2{
+  background-color: rgba(17, 16, 16, 0.792);
+  position: absolute;
+            }
+.contacto {
+  margin-left: 100PX;
+  display: flex;
+  align-items: center  
+          }
+.ordenar{
+  position: absolute;
+  margin-right: 3%;
+  margin-left: 3%;
+  display: flex;
+  width: 10px;
+  height:50px;
+}
