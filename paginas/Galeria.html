@@ -12,10 +12,9 @@
     <link rel="stylesheet" href="Style/style.css">
   
 </head>
-<body class="p-3 mb-2 bg-secondary-subtle text-secondary-emphasis">
-      <br>
-      <!-- MENU PRINCIPAL -->
-     
+<body class="p-3 mb-2 bg-body-secondary">
+       <br>
+       <!-- MENU PRINCIPAL -->
        <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand " href="/index.html"><IMg  src="/Imagenes/LOGO1.jpg" alt="" height="35" width="150"></a>
@@ -44,12 +43,12 @@
             </form>
           </div>
         </div>
-      </nav>   
-      <br>
-     <!-- imagen de Carrusel --> 
-<div class="row">
-<div class="col"></div>
-<div class="col">
+       </nav>   
+       <br>
+       <!-- imagen de Carrusel --> 
+       <div class="row">
+          <div class="col"></div>
+          <div class="col">
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -89,472 +88,569 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
-  <div class="col"></div>
-  </div>
-  <br><br>
-      <!-- Titulo Exteriores -->
-         <h3 class="header1  d-block p-1 text-bg-primary text-center" id="ima"> IMAGENES DE EXTERIORES</h3>
-         <br><br>
+          </div>
+          <div class="col"></div>
+       </div>
+       <br><br>
+       <!-- Titulo Exteriores -->
+       <h3 class="header1  d-block p-1 text-bg-primary text-center" id="ima"> IMAGENES DE EXTERIORES</h3>
+       <br><br>
           <!-- imagen1 -->
-         <div class="row">
-          <div class="col">
-          <img src="/Imagenes/Arte Sella.jpg#ima "  class="d-block w-100" alt="..." height="400">
-        </div>
-        <div class="col">
-          <div class="accordion accordion-flush" id="accordionFlushExample1">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
-                  Biografía
-                </button>
-              </h2>
-              <div id="flush-collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
-                <div class="accordion-body">
-                  Alfredo Lobos Aranguiz, pintor. Nació en Rancagua en 1890. Falleció en Madrid, España, en enero de 1918.
+          <div class="row">
+              <div class="col">
+                  <img src="/Imagenes/Arte Sella.jpg#ima "  class="d-block w-100" alt="..." height="400">
+              </div>
+              <div class="col">
+              <div class="accordion accordion-flush" id="accordionFlushExample01">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne01" aria-expanded="false" aria-controls="flush-collapseOne01">
+                         Biografía
+                         </button>
+                      </h2>
+                      <div id="flush-collapseOne01" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample01">
+                         <div class="accordion-body">
+                         Alfredo Lobos Aranguiz, pintor. Nació en Rancagua en 1890. Falleció en Madrid, España, en enero de 1918.
                   
-                  Proveniente de una familia de hermanos artistas de orígenes humildes, se distinguió como alumno del curso nocturno dictado por el maestro Fernando Álvarez de Sotomayor, integrando de esta forma, la Generación del Trece, también llamada Generación Trágica, debido al ingrato destino que siguió a muchos de los artistas de la época entre ellos los tres hermanos Lobos, pintores que murieron tempranamente debido a su deteriorada salud.
+                         Proveniente de una familia de hermanos artistas de orígenes humildes, se distinguió como alumno del curso nocturno dictado por el maestro Fernando Álvarez de Sotomayor, integrando de esta forma, la Generación del Trece, también llamada Generación Trágica, debido al ingrato destino que siguió a muchos de los artistas de la época entre ellos los tres hermanos Lobos, pintores que murieron tempranamente debido a su deteriorada salud.
                   
-                  En 1916 se financió un viaje a España con su propio esfuerzo. Víctima de una grave enfermedad, la muerte le sorprendió en las vísperas de la inauguración de una muestra de sus obras en la Galería El Ateneo de Madrid en 1918. </div>
+                         En 1916 se financió un viaje a España con su propio esfuerzo. Víctima de una grave enfermedad, la muerte le sorprendió en las vísperas de la inauguración de una muestra de sus obras en la Galería El Ateneo de Madrid en 1918. 
+                         </div>   
+                      </div>
+                      <div class="accordion-item">
+                           <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo02" aria-expanded="false" aria-controls="flush-collapseTwo02">
+                                       Tabla Informativa
+                               </button>
+                           </h2>
+                           <div id="flush-collapseTwo02" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample02">
+                                <table class="table">
+                                      <thead>
+                                           <tr>
+                                              <th scope="col">#</th>
+                                              <th scope="col">Artista</th>
+                                              <th scope="col">Descripcion</th>
+                                              <th scope="col">Medidas</th>
+                                           </tr>
+                                      </thead>
+                                      <tbody>
+                                           <tr>
+                                              <th scope="row">1</th>
+                                              <td>Alfredo Lobos</td>
+                                              <td>Óleo Original en tela #204</td>
+                                              <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Medidas 30 x 40 cm </td>
+                                              <!-- Modal-->
+                                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                   <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                             <div class="modal-header">
+                                                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Valor del Cuadro</h1>
+                                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                             </div>
+                                                             <div class="modal-body">
+                                                                  $450.000
+                                                             </div>
+                                                             <div class="modal-footer">
+                                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                             </div>
+                                                        </div>
+                                                   </div>
+                                              </div>
+                                           </tr>
+                                      </tbody>
+                                </table>
+                           </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div> 
+          <!-- imagen2 -->
+          <div><br></div>
+          <div class="row">
+            <div class="col">
+              <div class="accordion accordion-flush" id="accordionFlushExample21">
+                    <div class="accordion-item">
+                         <h2 class="accordion-header">
+                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne21" aria-expanded="false" aria-controls="flush-collapseOne21">
+                                     Biografía
+                             </button>
+                         </h2>
+                         <div id="flush-collapseOne21" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample21">
+                              <div class="accordion-body">
+                                   Alfredo Lobos Aranguiz, pintor. Nació en Rancagua en 1890. Falleció en Madrid, España, en enero de 1918.
+            
+                                   Proveniente de una familia de hermanos artistas de orígenes humildes, se distinguió como alumno del curso nocturno dictado por el maestro Fernando Álvarez de Sotomayor, integrando de esta forma, la Generación del Trece, también llamada Generación Trágica, debido al ingrato destino que siguió a muchos de los artistas de la época entre ellos los tres hermanos Lobos, pintores que murieron tempranamente debido a su deteriorada salud.
+            
+                                   En 1916 se financió un viaje a España con su propio esfuerzo. Víctima de una grave enfermedad, la muerte le sorprendió en las vísperas de la inauguración de una muestra de sus obras en la Galería El Ateneo de Madrid en 1918. 
+                              </div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header">
+                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo21" aria-expanded="false" aria-controls="flush-collapseTwo21">
+                                     Tabla Informativa
+                             </button>
+                         </h2>
+                         <div id="flush-collapseTwo21" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample21">
+                              <table class="table">
+                                      <thead>
+                                            <tr>
+                                              <th scope="col">#</th>
+                                              <th scope="col">Artista</th>
+                                              <th scope="col">Descripcion</th>
+                                              <th scope="col">Medidas</th>
+                                            </tr>
+                                      </thead>
+                                      <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>Alfredo Lobos</td>
+                                                <td>Óleo Original en tela #204</td>
+                                                <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Medidas 30 x 40 cm </td>
+                                               <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                     <div class="modal-dialog">
+                                                          <div class="modal-content">
+                                                              <div class="modal-header">
+                                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Valor del Cuadro</h1>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                              </div>
+                                                              <div class="modal-body">
+                                                                    $450.000
+                                                              </div>
+                                                              <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                                                              </div>
+                                                          </div>
+                                                     </div>
+                                                </div>
+                                              </tr>  
+                                      </tbody>
+                              </table>
+                         </div>
+                    </div>
               </div>
             </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo2">
-            Tabla Informativa
-          </button>
-        </h2>
-        <div id="flush-collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Artista</th>
-                <th scope="col">Descripcion</th>
-                <th scope="col">Medidas</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Alfredo Lobos</td>
-                <td>Óleo Original en tela #204</td>
-                <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Medidas 30 x 40 cm </td>
-                <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Valor del Cuadro</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="col">
+                <img src="/Imagenes/4.jpeg" class="d-block w-100" alt="..." height="400">
             </div>
-            <div class="modal-body">
-            $450.000
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              
-            </div>
+           
+          </div>    
+          <br>
+          <!-- 3ra imagen -->
+          <div><br></div>
+          <div class="row">
+                <div class="col">
+                    <img src="/Imagenes/GARTE.jpg "  class="d-block w-100" alt="..." height="400">
+                </div>
+                <div class="col">
+                    <div class="accordion accordion-flush" id="accordionFlushExample31">
+                        <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne31" aria-expanded="false" aria-controls="flush-collapseOne31">
+                                          Biografía
+                                  </button>
+                              </h2>
+                              <div id="flush-collapseOne31" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample31">
+                                    <div class="accordion-body">
+                                          Alfredo Lobos Aranguiz, pintor. Nació en Rancagua en 1890. Falleció en Madrid, España, en enero de 1918.
+          
+                                          Proveniente de una familia de hermanos artistas de orígenes humildes, se distinguió como alumno del curso nocturno dictado por el maestro Fernando Álvarez de Sotomayor, integrando de esta forma, la Generación del Trece, también llamada Generación Trágica, debido al ingrato destino que siguió a muchos de los artistas de la época entre ellos los tres hermanos Lobos, pintores que murieron tempranamente debido a su deteriorada salud.
+          
+                                          En 1916 se financió un viaje a España con su propio esfuerzo. Víctima de una grave enfermedad, la muerte le sorprendió en las vísperas de la inauguración de una muestra de sus obras en la Galería El Ateneo de Madrid en 1918. 
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo32" aria-expanded="false" aria-controls="flush-collapseTwo32">
+                                        Tabla Informativa
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo32" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample32">
+                                <table class="table">
+                                        <thead>
+                                            <tr>
+                                              <th scope="col">#</th>
+                                              <th scope="col">Artista</th>
+                                              <th scope="col">Descripcion</th>
+                                              <th scope="col">Medidas</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                              <tr>
+                                                  <th scope="row">1</th>
+                                                  <td>Alfredo Lobos</td>
+                                                  <td>Óleo Original en tela #204</td>
+                                                  <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Medidas 30 x 40 cm </td>
+                                                  <!-- Modal -->
+                                                  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                                      <div class="modal-dialog">
+                                                          <div class="modal-content">
+                                                              <div class="modal-header">
+                                                                  <h1 class="modal-title fs-5" id="exampleModalLabel3">Valor del Cuadro</h1>
+                                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                              </div>
+                                                              <div class="modal-body">
+                                                                    $450.000
+                                                              </div>
+                                                              <div class="modal-footer">
+                                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </tr>
+                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
           </div>
-        </div>
-      </div>
-              </tr>
-             
-            </tbody>
-          </table>
-          <!--  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div> -->
-        </div>
-      </div>
-      </div>
-      </div>
-      </div>
-        
-<!-- imagen2 -->
-
-<div><br></div>
-<div class="row">
- 
-  <div class="col">
-    <div class="accordion accordion-flush" id="accordionFlushExample1">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
-            Biografía
-          </button>
-        </h2>
-        <div id="flush-collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
-          <div class="accordion-body">
-            Alfredo Lobos Aranguiz, pintor. Nació en Rancagua en 1890. Falleció en Madrid, España, en enero de 1918.
+       <!-- Titulo pinturas de valparaiso -->
+       <div><br><br></div>
+       <h3 class="header1  d-block p-1 text-bg-primary text-center" id="ima2"> PINTURAS DE VALPARISO</h3>
+          <div class="col">
+          <br><br>
+          <!-- imagen1 -->
+          <div class="row">
+                  <div class="col-5">
+                      <img src="/Imagenes/PINT1.webp " class="d-block w-100" alt="..." height="400">
+                  </div>
+                  <br><br>
+                  <div class="col">
+                      <div class="accordion accordion-flush" id="accordionFlushExampleb1">
+                          <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneb1" aria-expanded="false" aria-controls="flush-collapseOneb1">
+                                  Biografía
+                                  </button>
+                              </h2>
+                              <div id="flush-collapseOneb1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExampleb1">
+                                    <div class="accordion-body">
+                                        Alfredo Lobos Aranguiz, pintor. Nació en Rancagua en 1890. Falleció en Madrid, España, en enero de 1918.
             
-            Proveniente de una familia de hermanos artistas de orígenes humildes, se distinguió como alumno del curso nocturno dictado por el maestro Fernando Álvarez de Sotomayor, integrando de esta forma, la Generación del Trece, también llamada Generación Trágica, debido al ingrato destino que siguió a muchos de los artistas de la época entre ellos los tres hermanos Lobos, pintores que murieron tempranamente debido a su deteriorada salud.
+                                        Proveniente de una familia de hermanos artistas de orígenes humildes, se distinguió como alumno del curso nocturno dictado por el maestro Fernando Álvarez de Sotomayor, integrando de esta forma, la Generación del Trece, también llamada Generación Trágica, debido al ingrato destino que siguió a muchos de los artistas de la época entre ellos los tres hermanos Lobos, pintores que murieron tempranamente debido a su deteriorada salud.
             
-            En 1916 se financió un viaje a España con su propio esfuerzo. Víctima de una grave enfermedad, la muerte le sorprendió en las vísperas de la inauguración de una muestra de sus obras en la Galería El Ateneo de Madrid en 1918. </div>
-        </div>
-      </div>
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo2">
-      Tabla Informativa
-    </button>
-  </h2>
-  <div id="flush-collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Artista</th>
-          <th scope="col">Descripcion</th>
-          <th scope="col">Medidas</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Alfredo Lobos</td>
-          <td>Óleo Original en tela #204</td>
-          <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Medidas 30 x 40 cm </td>
-          <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Valor del Cuadro</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      $450.000
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-        </tr>
-       
-      </tbody>
-    </table>
-    <!--  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div> -->
-  </div>
-</div>
-</div>
-</div>
- <div class="col">
- <img src="/Imagenes/4.jpeg" class="d-block w-100" alt="..." height="400">
-</div>
-</div>
-<br>
-<!-- 3ra imagen -->
-<div><br></div>
-<div class="row">
-  <div class="col">
-  <img src="/Imagenes/GARTE.jpg "  class="d-block w-100" alt="..." height="400">
-
-</div>
-<div class="col">
-  <div class="accordion accordion-flush" id="accordionFlushExample1">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
-          Biografía
-        </button>
-      </h2>
-      <div id="flush-collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
-        <div class="accordion-body">
-          Alfredo Lobos Aranguiz, pintor. Nació en Rancagua en 1890. Falleció en Madrid, España, en enero de 1918.
-          
-          Proveniente de una familia de hermanos artistas de orígenes humildes, se distinguió como alumno del curso nocturno dictado por el maestro Fernando Álvarez de Sotomayor, integrando de esta forma, la Generación del Trece, también llamada Generación Trágica, debido al ingrato destino que siguió a muchos de los artistas de la época entre ellos los tres hermanos Lobos, pintores que murieron tempranamente debido a su deteriorada salud.
-          
-          En 1916 se financió un viaje a España con su propio esfuerzo. Víctima de una grave enfermedad, la muerte le sorprendió en las vísperas de la inauguración de una muestra de sus obras en la Galería El Ateneo de Madrid en 1918. </div>
-      </div>
-    </div>
-<div class="accordion-item">
-<h2 class="accordion-header">
-  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo2">
-    Tabla Informativa
-  </button>
-</h2>
-<div id="flush-collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Artista</th>
-        <th scope="col">Descripcion</th>
-        <th scope="col">Medidas</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Alfredo Lobos</td>
-        <td>Óleo Original en tela #204</td>
-        <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Medidas 30 x 40 cm </td>
-        <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h1 class="modal-title fs-5" id="exampleModalLabel">Valor del Cuadro</h1>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-    $450.000
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      
-    </div>
-  </div>
-</div>
-</div>
-      </tr>
-     
-    </tbody>
-  </table>
-  <!--  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div> -->
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- pinturas de valparaiso -->
-
-<div><br><br></div>
-<h3 class="header1  d-block p-1 text-bg-primary text-center" id="ima2"> PINTURAS DE VALPARISO</h3>
-
-<div class="col">
-  <br><br>
-<div class="row">
-<div class="col-5">
-  <img src="/Imagenes/PINT1.webp " class="d-block w-100" alt="..." height="400">
-</div>
-  <br><br>
-  <div class="col">
-    <div class="accordion accordion-flush" id="accordionFlushExample21">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne21" aria-expanded="false" aria-controls="flush-collapseOne21">
-            Biografía
-          </button>
-        </h2>
-        <div id="flush-collapseOne21" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample21">
-          <div class="accordion-body">
-            Alfredo Lobos Aranguiz, pintor. Nació en Rancagua en 1890. Falleció en Madrid, España, en enero de 1918.
-            
-            Proveniente de una familia de hermanos artistas de orígenes humildes, se distinguió como alumno del curso nocturno dictado por el maestro Fernando Álvarez de Sotomayor, integrando de esta forma, la Generación del Trece, también llamada Generación Trágica, debido al ingrato destino que siguió a muchos de los artistas de la época entre ellos los tres hermanos Lobos, pintores que murieron tempranamente debido a su deteriorada salud.
-            
-            En 1916 se financió un viaje a España con su propio esfuerzo. Víctima de una grave enfermedad, la muerte le sorprendió en las vísperas de la inauguración de una muestra de sus obras en la Galería El Ateneo de Madrid en 1918. </div>
-        </div>
-      </div>
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo22" aria-expanded="false" aria-controls="flush-collapseTwo22">
-      Tabla Informativa
-    </button>
-  </h2>
-  <div id="flush-collapseTwo22" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample22">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Artista</th>
-          <th scope="col">Descripcion</th>
-          <th scope="col">Medidas</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Alfredo Lobos</td>
-          <td>Óleo Original en tela #204</td>
-          <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Medidas 30 cm x 40 cm </td>
-          <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Valor del Cuadro</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      $165,000
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-        </tr>
-       
-      </tbody>
-    </table>
-    <!--  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div> -->
-  </div>
-</div>
-</div>
-</div>
-<!-- imagen2 -->
-
-<div><br></div>
-<div class="row">
- 
-  <div class="col">
-    <div class="accordion accordion-flush" id="accordionFlushExample1">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
-            Biografía
-          </button>
-        </h2>
-        <div id="flush-collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
-          <div class="accordion-body">
-            Tatiana Tarasova, artista visual. Nació en Moscú, Rusia, el 24 de septiembre 1992. Siempre amó y practicó pintura y dibujo, desde 2013 es Licenciada en Economía de la Universidad Rusa de Economía G.V. Plekhanov. Tomó clases de Pintura, Ilustración, Gráfica y Tipografía con profesores de la Universidad Poligráfica de Moscú.
-Desde el año 2014 reside en Chile. Se dedica a la creación de obras propias, realiza pintura por encargo y reproducciones de cuadros. Principalmente trabaja con óleo en técnica realismo e impresionismo.
-Los temas de las obras son flora y fauna, paisajes, bodegones, abstracto. Influenciada por la pintura rusa de “Peredvízhniki” e Impresionismo y siendo más pintora que dibujante, da mayor importancia al uso de color en el trabajo, el manejo de luz y la profundidad para crear una obra “viva”.
-La idea general de Tatiana se concentra en elaboración de una pieza única decorativa, que transmite sensación de paz y amor. Al igual como decía Pierre-Auguste Renoir (1841-1919): “En mi opinión, un cuadro debe ser algo agradable, alegre y bonito, ¡sí bonito! Hay demasiadas cosas desagradables en la vida como para crear aún más de ellas”.  </div>
-        </div>
-      </div>
-<div class="accordion-item">
-  <h2 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo2">
-      Tabla Informativa
-    </button>
-  </h2>
-  <div id="flush-collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Artista</th>
-          <th scope="col">Descripcion</th>
-          <th scope="col">Medidas</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Tatiana Tarasova</td>
-          <td>Pintura, Oleo en Lienzo</td>
-          <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Medidas 50 cm x 50 cm </td>
-          <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Valor del Cuadro</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      $93.644 "Solo venta de Impresión / Original no esta a la Venta"
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-        </tr>
-       
-      </tbody>
-    </table>
-    <!--  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div> -->
-  </div>
-</div>
-</div>
-</div>
- <div class="col">
- <img src="/Imagenes/c2.jpg" class="d-block w-100" alt="..." height="400">
-</div>
-</div>
-<br>
-
-</div>
-<!-- 3ra imagen -->
-<div><br></div>
-<div class="row">
-  <div class="col">
-  <img src="/Imagenes/c3.webp "  class="d-block w-100" alt="..." height="400">
-
-</div>
-<div class="col">
-  <div class="accordion accordion-flush" id="accordionFlushExample1">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
-          Biografía
-        </button>
-      </h2>
-      <div id="flush-collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
-        <div class="accordion-body">
-          Alejandro “Mono” Gonzales (71) curicano, es un artista plástico reconocido tanto por sus obras como por su participación en distintos proyectos culturales desde 1960 hasta la fecha, entre los que destaca el muralismo, teatro y las artes escenográficas.  Sus temáticas como sueños personales interpelan las injusticias sociales, a través del simbolismo busca invitar a la reflexión y la transformación de la sociedad. A través de líneas puras y planos llenos, cuenta la vida de obreros, trabajadores y pobladores relevándolos a la historia plástica del país. Dentro de sus obras destacadas están “Sin título” (71) en el hospital del trabajador, “Vida y trabajo “(2008) en la estación de metro parque Bustamante. Ha realizado varias obras en conjunto con otros artistas y generaciones de muralistas entre ellos Roberto Matta, como “El primer gol del pueblo chileno” (71), Su último reconocimiento es un Altazor, el año 2011 en la categoría diseño grafico e ilustración</div>
-      </div>
-    </div>
-<div class="accordion-item">
-<h2 class="accordion-header">
-  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo2">
-    Tabla Informativa
-  </button>
-</h2>
-<div id="flush-collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Artista</th>
-        <th scope="col">Descripcion</th>
-        <th scope="col">Medidas</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>ALEJANDRO «MONO» GONZALEZ</td>
-        <td>Óleo Original en tela #204</td>
-        <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Medidas 60 CM x 90 cm </td>
-        <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h1 class="modal-title fs-5" id="exampleModalLabel">Valor del Cuadro</h1>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-    $195.000 "VISTA DE VALPARAISO"
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      
-    </div>
-  </div>
-</div>
-</div>
-      </tr>
-     
-    </tbody>
-  </table>
-  <!--  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div> -->
-</div>
-</div>
-</div>
-</div>
-
-     <!-- LINK PARA REDES SOCIALES -->
-       <br>
-       <div class="row">
-       <div class="header2">
-            <a  href ="https://www.instagram.com/"> <IMg  class="PALLADO"src="/Imagenes/instagram.png" alt="" height="30" width="35"></img></A>
-            <a  href ="https://www.facebook.com/"> <IMg class="PALLADO" src="/Imagenes/facebook.png" alt="" height="30" width="35"></img></A>
-            <a  href ="https://www.whatsapp.com/"> <IMg class="PALLADO" src="/Imagenes/Whatsapp.png" alt="" height="30" width="35"></img></A>
-            <a  href ="https://www.tiktok.com/"> <IMg  class="PALLADO" src="/Imagenes/ticktock.png" alt="" height="30" width="35"></img></A>
-            <a  href ="https://twitter.com/"> <IMg class="PALLADO" src="/Imagenes/twitter.png" alt="" height="30" width="35"></img></A>
-       </div>
-     </div> 
+                                        En 1916 se financió un viaje a España con su propio esfuerzo. Víctima de una grave enfermedad, la muerte le sorprendió en las vísperas de la inauguración de una muestra de sus obras en la Galería El Ateneo de Madrid en 1918. 
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwob1" aria-expanded="false" aria-controls="flush-collapseTwob1">
+                                            Tabla Informativa
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwob1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExampleb1">
+                                      <table class="table">
+                                            <thead>
+                                                <tr>
+                                                  <th scope="col">#</th>
+                                                  <th scope="col">Artista</th>
+                                                  <th scope="col">Descripcion</th>
+                                                  <th scope="col">Medidas</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                  <tr>
+                                                      <th scope="row">1</th>
+                                                      <td>Alfredo Lobos</td>
+                                                      <td>Óleo Original en tela #204</td>
+                                                      <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalb1">Medidas 30 cm x 40 cm </td>
+                                                      <!-- Modal -->
+                                                      <div class="modal fade" id="exampleModalb1" tabindex="-1" aria-labelledby="exampleModalLabelb1" aria-hidden="true">
+                                                          <div class="modal-dialog">
+                                                              <div class="modal-content">
+                                                                  <div class="modal-header">
+                                                                      <h1 class="modal-title fs-5" id="exampleModalLabelb1">Valor del Cuadro</h1>
+                                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                  </div>
+                                                                  <div class="modal-body">
+                                                                  $165,000
+                                                                  </div>
+                                                                  <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </tr>
+                                            </tbody>
+                                      </table>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+          </div>   
+          <!-- imagen2 -->
+          <div><br></div>
+          <div class="row"> 
+                <div class="col">
+                    <div class="accordion accordion-flush" id="accordionFlushExampleb2">
+                          <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneb2" aria-expanded="false" aria-controls="flush-collapseOneb2">
+                                  Biografía
+                                  </button>
+                              </h2>
+                              <div id="flush-collapseOneb2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExampleb2">
+                                  <div class="accordion-body">
+                                        Tatiana Tarasova, artista visual. Nació en Moscú, Rusia, el 24 de septiembre 1992. Siempre amó y practicó pintura y dibujo, desde 2013 es Licenciada en Economía de la Universidad Rusa de Economía G.V. Plekhanov. Tomó clases de Pintura, Ilustración, Gráfica y Tipografía con profesores de la Universidad Poligráfica de Moscú.
+                                        Desde el año 2014 reside en Chile. Se dedica a la creación de obras propias, realiza pintura por encargo y reproducciones de cuadros. Principalmente trabaja con óleo en técnica realismo e impresionismo.
+                                        Los temas de las obras son flora y fauna, paisajes, bodegones, abstracto. Influenciada por la pintura rusa de “Peredvízhniki” e Impresionismo y siendo más pintora que dibujante, da mayor importancia al uso de color en el trabajo, el manejo de luz y la profundidad para crear una obra “viva”.
+                                        La idea general de Tatiana se concentra en elaboración de una pieza única decorativa, que transmite sensación de paz y amor. Al igual como decía Pierre-Auguste Renoir (1841-1919): “En mi opinión, un cuadro debe ser algo agradable, alegre y bonito, ¡sí bonito! Hay demasiadas cosas desagradables en la vida como para crear aún más de ellas”.  
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwob2" aria-expanded="false" aria-controls="flush-collapseTwob2">
+                                          Tabla Informativa
+                                  </button>
+                              </h2>
+                              <div id="flush-collapseTwob2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExampleb2">
+                                  <table class="table">
+                                      <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Artista</th>
+                                                <th scope="col">Descripcion</th>
+                                                <th scope="col">Medidas</th>
+                                            </tr>
+                                      </thead>
+                                      <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Tatiana Tarasova</td>
+                                                <td>Pintura, Oleo en Lienzo</td>
+                                                <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalb2">Medidas 50 cm x 50 cm </td>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModalb2" tabindex="-1" aria-labelledby="exampleModalLabelb2" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                          <div class="modal-content">
+                                                              <div class="modal-header">
+                                                                  <h1 class="modal-title fs-5" id="exampleModalLabelb2">Valor del Cuadro</h1>
+                                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                              </div>
+                                                              <div class="modal-body">
+                                                                    $93.644 "Solo venta de Impresión / Original no esta a la Venta"
+                                                              </div>
+                                                              <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>  
+                                                              </div>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                    </div>
+                </div> 
+                <div class="col">
+                    <img src="/Imagenes/c2.jpg" class="d-block w-100" alt="..." height="400">
+                </div>
+          </div>
+          <br>
+          <!-- 3ra imagen -->
+          <div><br></div>
+          <div class="row">
+                <div class="col">
+                    <img src="/Imagenes/c3.webp "  class="d-block w-100" alt="..." height="400">
+                </div>
+                <div class="col">
+                    <div class="accordion accordion-flush" id="accordionFlushExampleb3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneb3" aria-expanded="false" aria-controls="flush-collapseOneb3">
+                                Biografía
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOneb3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExampleb3">
+                                <div class="accordion-body">
+                                    Alejandro “Mono” Gonzales (71) curicano, es un artista plástico reconocido tanto por sus obras como por su participación en distintos proyectos culturales desde 1960 hasta la fecha, entre los que destaca el muralismo, teatro y las artes escenográficas.  Sus temáticas como sueños personales interpelan las injusticias sociales, a través del simbolismo busca invitar a la reflexión y la transformación de la sociedad. A través de líneas puras y planos llenos, cuenta la vida de obreros, trabajadores y pobladores relevándolos a la historia plástica del país. Dentro de sus obras destacadas están “Sin título” (71) en el hospital del trabajador, “Vida y trabajo “(2008) en la estación de metro parque Bustamante. Ha realizado varias obras en conjunto con otros artistas y generaciones de muralistas entre ellos Roberto Matta, como “El primer gol del pueblo chileno” (71), Su último reconocimiento es un Altazor, el año 2011 en la categoría diseño grafico e ilustración
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwob3" aria-expanded="false" aria-controls="flush-collapseTwob3">
+                                          Tabla Informativa
+                                  </button>
+                              </h2>
+                              <div id="flush-collapseTwob3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExampleb3">
+                                  <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Artista</th>
+                                                <th scope="col">Descripcion</th>
+                                                <th scope="col">Medidas</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>ALEJANDRO «MONO» GONZALEZ</td>
+                                                <td>Óleo Original en tela #204</td>
+                                                <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalb3">Medidas 60 CM x 90 cm </td>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModalb3" tabindex="-1" aria-labelledby="exampleModalLabelb3" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                              <h1 class="modal-title fs-5" id="exampleModalLabelb3">Valor del Cuadro</h1>
+                                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                  $195.000 "VISTA DE VALPARAISO"
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </tr>
+                                        </tbody>
+                                  </table>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div><br><br></div><br>
+          </div> 
+         
+       <!-- LINK PARA REDES SOCIALES -->
+       <div class="container-expand bg-body-tertiary" >
+        <footer class="py-1"> 
+          <div class="row">
+               <div class="col-6 col-md-2 mb-1">
+                <h5>
+                  <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Datos de Autor</font>
+                  </font>
+                </h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                      <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Autor</font>
+                      </font> 
+                  </li>
+                  <li class="nav-item mb-2">
+                    <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Carrera</font>
+                    </font> 
+                </li>
+                <li class="nav-item mb-2">
+                  <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Instituto</font>
+                  </font> 
+              </li>
+              <li class="nav-item mb-2">
+                <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Dirección</font>
+                </font> 
+            </li>
+                </ul> 
+               </div>
+               <div class="col-6 col-md-2 mb-1">
+                <h5>
+                  <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">--</font>
+                  </font>
+                </h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                      <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Arturo Chacon</font>
+                      </font> 
+                  </li>
+                  <li class="nav-item mb-2">
+                    <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Ing. Inf.</font>
+                    </font> 
+                </li>
+                <li class="nav-item mb-2">
+                  <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">CIISA</font>
+                  </font> 
+              </li>
+              <li class="nav-item mb-2">
+                <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;"># 2221 Avenida Alameda, Santiago</font>
+                </font> 
+            </li>
+                </ul> 
+               </div>
+               <div class="col-6 col-md-1 mb-1"></div>
+               <div class="col-md-5 offset-md-1 mb-2">
+                    <form>
+                          <h5>
+                             <font style="vertical-align: inherit;">
+                                  <font style="vertical-align: inherit;">Suscribete a nuestro boletín</font>
+                             </font>
+                          </h5>
+                          <p>
+                             <font style="vertical-align: inherit;">
+                                  <font style="vertical-align: inherit;">Resumen Mensual de nuestras novedades</font>
+                             </font> 
+                          </p>
+                          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                              <label for="newsletter1" class="visually-hidden">
+                                     <font style="vertical-align: initial;">
+                                           <font style="vertical-align: inherit;">Dirección de correo electrónico</font>
+                                     </font>
+                              </label>
+                              <input id="newsletter1" type="text" class="form-control" placeholder="Direccion de correo electrónico"> 
+                              <button class="btn btn-primary" type="button">
+                                      <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Suscribir</font>
+                                      </font>
+                              </button>
+                          </div>
+                    </form>
+               </div>
+          </div>
+          <div class="d-flex flex-column flex-sm-row justify-content-between py4 my-4 border-top">
+                 <p>
+                    <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">@ 2024 CIISA, Todos los derechos reservados.</font>
+                    </font>
+                 </p>
+                 <ul class="list-unstyled d-flex">
+                     <li class="ms-3">
+                         <a class="link-body-emphasis" href="https://www.instagram.com/"><IMg  class="PALLADO"src="/Imagenes/instagram.png" alt="" height="30" width="35">
+                             <svg class="bi" width="24" heigth="24"> </svg>
+                             <use xlink:href="#instagram"></use>
+                        </a>
+                     </li>
+                     <li class="ms-3">
+                      <a class="link-body-emphasis" href="https://www.whatsapp.com/"><IMg  class="PALLADO"src="/Imagenes/Whatsapp.png" alt="" height="30" width="35">
+                          <svg class="bi" width="24" heigth="24"> </svg>
+                          <use xlink:href="#instagram"></use>
+                     </a>
+                     </li>
+                     <li class="ms-3">
+                        <a class="link-body-emphasis" href="https://www.tiktok.com"><IMg  class="PALLADO"src="/Imagenes/ticktock.png" alt="" height="30" width="35">
+                          <svg class="bi" width="24" heigth="24"> </svg>
+                          <use xlink:href="#instagram"></use>
+                        </a>
+                     </li>
+                     <li class="ms-3">
+                         <a class="link-body-emphasis" href="https://twitter.com"><IMg  class="PALLADO"src="/Imagenes/twitter.png" alt="" height="30" width="35">
+                           <svg class="bi" width="24" heigth="24"> </svg>
+                           <use xlink:href="#instagram"></use>
+                         </a>
+                     </li>
+                 </ul>
+          </div>
+        </footer>
+      </div>      
    
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

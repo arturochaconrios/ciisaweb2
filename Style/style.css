@@ -116,13 +116,13 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 15px;
          }
 .header2 {
-  margin-right: 0%;
+  margin-right: 2%;
   margin-left: 0%;
   width : 98.5% ;
   position: fixed;
-  border: solid 5px rgb(179, 162, 10);
+  border: solid 5px rgb(199, 197, 175);
   border-radius: 10px;
-  background-color: rgb(179, 162, 10)       
+  background-color: rgb(199, 197, 175)       
           }
 .PALLADO {
   display: flex;
