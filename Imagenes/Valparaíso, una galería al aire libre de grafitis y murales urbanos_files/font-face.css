@@ -1,0 +1,38 @@
+
+/* Fuentes nuevas  */
+
+@font-face {
+    font-family: 'ClarinvarVF';
+    src: url('/Fonts/ClarinFont/ClarinvarVF.woff2') format("woff2 supports variations"), url('/Fonts/ClarinFont/ClarinvarVF.woff2') format("woff2-variations");
+    font-weight: 100 1000;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdelleSansClarin-VF';
+    src: url('/Fonts/ClarinFont/AdelleSansClarin-VF.woff2');
+    font-display: swap;
+}
+
+
+/* @font-face {
+    font-family: 'AdelleSans-Regular';
+    src: url('/Fonts/ClarinFont/AdelleSans-Regular.eot');
+    src: url('/Fonts/ClarinFont/AdelleSans-Regular.eot?#iefix') format('embedded-opentype'), url('/Fonts/ClarinFont/AdelleSans-Regular.woff2') format('woff2'), url('/Fonts/ClarinFont/AdelleSans-Regular.woff') format('woff'), url('/Fonts/ClarinFont/AdelleSans-Regular.ttf') format('truetype'), url('/Fonts/ClarinFont/AdelleSans-Regular.svg#AdelleSans-Regular') format('svg');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AdelleSans-Bold';
+    src: url('/Fonts/ClarinFont/AdelleSans-Bold.eot');
+    src: url('/Fonts/ClarinFont/AdelleSans-Bold.eot?#iefix') format('embedded-opentype'), url('/Fonts/ClarinFont/AdelleSans-Bold.woff') format('woff'), url('/Fonts/ClarinFont/AdelleSans-Bold.woff2') format('woff2'), url('/Fonts/ClarinFont/AdelleSans-Bold.ttf') format('truetype'), url('/Fonts/ClarinFont/AdelleSans-Bold.svg#AdelleSans-Bold') format('svg');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AdelleSans-Light';
+    src: url('/Fonts/ClarinFont/AdelleSans-Light.eot');
+    src: url('/Fonts/ClarinFont/AdelleSans-Light.eot?#iefix') format('embedded-opentype'), url('/Fonts/ClarinFont/AdelleSans-Light.woff2') format('woff2'), url('/Fonts/ClarinFont/AdelleSans-Light.woff') format('woff'), url('/Fonts/ClarinFont/AdelleSans-Light.ttf') format('truetype'), url('/Fonts/ClarinFont/AdelleSans-Light.svg#AdelleSans-Light') format('svg');
+    font-style: normal;
+    font-display: swap;
+} */

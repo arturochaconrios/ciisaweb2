@@ -1,0 +1,95 @@
+function getArticleIDFromURL() {
+  const url = window.location.href;
+  const match = url.match(/_0_([a-zA-Z0-9]+)\.html/);
+  if (match) {
+    return match[1];
+  } else {
+    return null;
+  }
+}
+
+function waitSeconds(milliseconds) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, milliseconds);
+  });
+}
+
+function ualterStart(environment, container, options = {}) {
+  const UALTER_CDN_BASE_URL = 'https://cdn.ualter.ai';
+  let __ualterAnalyticsCodes = [];
+
+  if (environment[0] === 'c') {
+    __ualterAnalyticsCodes = ['G-Q841KY60HQ', 'G-NEGC0TBY9E'];
+  } else if (environment[0] === 'e') {
+    __ualterAnalyticsCodes = ['G-WQJR9GBQK6'];
+  }
+
+  __ualterAnalyticsCodes.forEach((code) => ualterAnalyticsInit(code.replace('G-', '')));
+  // Analytics
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  __ualterAnalyticsCodes.forEach((code) => gtag('config', code));
+
+  // Init
+  const mediaArticleID = options.articleId || getArticleIDFromURL();
+  if (options.sound) {
+    loadUalterScript(options);
+  } else if (mediaArticleID) {
+    const jsonURL = `${UALTER_CDN_BASE_URL}/${environment}/${mediaArticleID}.json`;
+    fetch(jsonURL, { method: 'HEAD' }).then((res) => {
+      if (res.ok) {
+        loadUalterScript({ articleId: mediaArticleID, ...options })
+          .then(() => {
+            ualterEmbed({}, container, gtag, __ualterAnalyticsCodes, jsonURL);
+          })
+          .catch((error) => {
+            console.error('Error loading the script:', error);
+          });
+      } else {
+        console.log(`Ualter: article ${mediaArticleID} not found`);
+      }
+    });
+  }
+}
+
+function ualterAnalyticsInit(code) {
+  const script = document.createElement('script');
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=' + code;
+  script.async = true;
+
+  document.head.appendChild(script);
+}
+
+function loadUalterScript(options) {
+  let scriptName = 'ualter_embed';
+  let cssName = 'ualter';
+
+  if (options.forceSummary) {
+    scriptName = 'ualter_summary';
+    cssName = 'ualter_summary';
+  } else if (options.sound) {
+    scriptName = 'sound_embed';
+    cssName = 'ualter_sound';
+  }
+
+  return new Promise((resolve, reject) => {
+    const UALTER_SCRIPTS_PATH = 'https://cdn.ualter.ai/assets';
+
+    const link = document.createElement('link');
+    link.href = `${UALTER_SCRIPTS_PATH}/${cssName}.css`;
+    link.rel = 'stylesheet';
+    link.onerror = reject;
+
+    const script = document.createElement('script');
+    script.src = `${UALTER_SCRIPTS_PATH}/${scriptName}.js`;
+    script.type = 'text/javascript';
+    script.onload = resolve;
+    script.onerror = reject;
+
+    document.head.appendChild(link);
+    document.head.appendChild(script);
+  });
+}

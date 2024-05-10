@@ -1,0 +1,7 @@
+
+      window._seedtag_tag = {"publisherToken":"0655-0616-01","adunitId":"30601102","iAdunitId":"64d152f150e44f0007e0eb8d","adunitName":"inScreen","adunitType":"inScreen","insertInsideIframe":false,"publisherEvents":"if (event.name === 'ad-insert' && event.adUnitType === 'inScreen') {\nconsole.log(\"Seedtag Clarin X button\")\ndocument.querySelector(\"button[id*='footer']\").parentElement.style.setProperty(\"visibility\",\"hidden\",\"important\");\n}"};
+      const stScript = document.createElement("script");
+      stScript.defer = true;
+      stScript.src = "https://t.seedtag.com/c/loader.js?cb=1712830800000";
+      document.body.appendChild(stScript);
+    

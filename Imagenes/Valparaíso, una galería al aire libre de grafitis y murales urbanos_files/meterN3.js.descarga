@@ -1,0 +1,105 @@
+window.n3Modal = function (type) {
+    let head  = document.getElementsByTagName('head')[0];
+    let link  = document.createElement('link');
+    link.id   = "meterN3";
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = '../css/meterN3.css';
+    link.media = 'all';
+    head.appendChild(link);
+
+    const doc = document.getElementsByTagName('html')[0];
+    const target = document.getElementById('NewsContainer');
+    const bodyNews = document.getElementById("storyBody")
+    doc.style.overflow = "hidden"
+    target.insertAdjacentHTML("beforebegin", html)
+    bodyNews.innerHTML = "";
+    let location = window.location.href;
+    let extraParams = {
+        'event': 'sendVirtualPageview',
+        'sourcesite': 'clarin-paywall',
+        'virtualPagePath': `https://www.clarin.com/suscripciones/landing.html?apw-origin=${location}&tipo=N3`
+    }
+    if (typeof sendGAPageview === "function") {
+        sendGAPageview(extraParams);
+    }
+    if(type != undefined && type == "limit"){
+        let wallN3 = document.getElementById("wallN3");
+        wallN3.classList.add("limit");
+    }
+    let openLegal = document.getElementById("openLegal");
+    let cancelButton = document.getElementById("cancelLegal");
+    let n3Legal = document.getElementById("n3Legal");
+    openLegal.addEventListener("click", function () {
+        n3Legal.showModal();
+    });
+
+    
+    
+    // Form cancel button closes the dialog box
+    cancelButton.addEventListener("click", function () {
+        n3Legal.close();
+    });
+}
+
+let userProfile = "";
+if (window.localStorage.getItem("wads_userProfile")) {
+    userProfile = window.localStorage.getItem("wads_userProfile");
+    userProfile = JSON.parse(userProfile);
+    userProfile = userProfile.value != undefined || userProfile.value != null  ? userProfile.value : userProfile;
+}
+let nameUser = userProfile != ""  ? userProfile.name+", llegaste al límite de notas" : "Llegaste al límite de notas";
+
+let html = '<div class="wallN3--fixed" id="wallN3">\
+                <div class="wallN3--Box">\
+                    <a class="close-n3" href="/?tipo=N3"></a>\
+                    <p class="topText">Esta nota es exclusiva para sucriptores</p>\
+                    <p class="topText2">'+nameUser+'</p>\
+                    <div class="box">\
+                        <div class="suscribers-only">\
+                            <span>\
+                                <svg xmlns = "http://www.w3.org/2000/svg" width="64" height="35" viewbox = "0 0 43.476 23.411">\
+                                    <path id="Exclusión_1" data-name="Exclusión 1" d="M1508.771,3570.411h-20.066a11.705,11.705,0,0,1,0-23.411h20.066a11.705,11.705,0,0,1,0,23.411Zm-14.607-12.792c-.591,0-1.025.034-1.233.05l-.06,0c-.643,3.394-3.05,5.958-4.643,7.655-.87.927-1.445,1.539-1.332,1.864.042.121.182.2.428.232a8.057,8.057,0,0,0,1.094.089,9.02,9.02,0,0,0,9.011-8.984c0-.2,0-.393-.015-.581A16.238,16.238,0,0,0,1494.164,3557.619Zm14.624,3.99h0l4.171,2.517-1.107-4.745,3.685-3.192-4.852-.411-1.9-4.475-1.9,4.475-4.853.411,3.686,3.192-1.107,4.745,4.17-2.517Zm-20.414-12.091a8.792,8.792,0,0,0-3.949.941,8.983,8.983,0,0,0-2.466,1.805,8.289,8.289,0,0,0-2.043,3.331,5.5,5.5,0,0,0,.439,5.151,5.275,5.275,0,0,0,3.94,2.056,5.883,5.883,0,0,0,3.667-1.295,5.736,5.736,0,0,0,2.039-3.374c-1.448.489-1.534.518-1.537.52l-1.561.529v.018s0,.01,0,.016a2.616,2.616,0,1,1-.281-1.162s0,0,.012,0c.306,0,6.295-1.638,8.881-5.1a9.021,9.021,0,0,0-7.079-3.443h-.06Z" transform="translate(-1477 -3547)" fill="#cc001b" />\
+                                </svg >\
+                            </span >\
+                            <p>Exclusivo sucriptores</p>\
+                        </div >\
+                        <div class="col1">\
+                            <p class="oferText0">Suscribite para seguir leyendo</p>\
+                            <p class="oferText">Oferta especial: Digital Clarín</p>\
+                            <div class="detail">\
+                                <span class="oferPrice">$10/mes</span>\
+                                <p class="text">\
+                                    Durante 3 meses, <span>luego $1.625 por mes</span>\
+                                </p>\
+                            </div>\
+                        </div>\
+                        <div class="col2">\
+                            <a onclick="" href="https://suscripcion.365.clarin.com/suscripcion/acceso-externo?origen=www.clarin.com&exito=https%3A%2F%2Fclarin.com&codigo_plan=COMBO_1_PRECIO_PROMO_3&apw-origin='+ location + '&tipo=N3" rel="nofollow" class="subscribeBtn">SUSCRIBITE AHORA</a>\
+                            <p>\
+                                <a class="more" href="https://www.clarin.com/suscripciones/landing.html?apw-origin='+ location + '&tipo=N3&utm_source=hit-n3&utm_medium=13-7">Ver más ofertas disponibles</a>\
+                            </p>\
+                        </div>\
+                    </div >\
+                    <div class="clear">\
+                        <button class="btn-legal" id="openLegal">\
+                            Legales Digital Clarín\
+                        </button>\
+                    </div>\
+                </div >\
+            </div >\
+            <dialog id="n3Legal" class="n3-legal">\
+                <div class="header-legal">\
+                    <span>Legales de productos</span>\
+                    <span class="close-n3" id="cancelLegal"></span>\
+                </div>\
+                <div class="content-legal">\
+                    <span>DIGITAL CLARÍN</span>\
+                    <p>\
+                        Oferta válida para nuevas altas desde el 01/03/2023 hasta el 31/12/2023 inclusive. Combo "SUSCRIPCIÓN DIGITAL CLARÍN", precio de lista $1.625 ARS. Precio inicial promocional por suscripción mensual $10 ARS durante 3 meses. Válido en la República Argentina. Período mínimo de suscripción: 1 mes. Para más información consultar términos y condiciones en www.clarin.com. ARTE GRÁFICO EDITORIAL ARGENTINO. CUIT 30-50012415-2 PIEDRAS 1743 CABA.\
+                    </p>\
+                </div>\
+            </dialog>\
+';
+
+let legalHtml = ''
