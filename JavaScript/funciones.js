@@ -7,7 +7,8 @@ if(nombre.length<=1){
   errores = errores + "<p>Nombre es campo requerido o debe ser mayor a un caracter</p>"  
 }
 if(errores !=""){
-    $("#errores").html(errores)
+  alert(errores)
+    //$("#errores").html(errores)
     return false
 }
 }
