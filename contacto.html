@@ -39,12 +39,41 @@
       <br><br>
       <!-- CONTACTO-->
       <div class="container">
-      <h1>Formulario de Regsitro</h1>
-      <form onsubmit="return obtenerFormularioJquery()">
-        <label>Nombre</label>
-        <input type="text" id="nombre" required>
-        <input type="submit">
-      </form>
+        <form onsubmit="return obtenerFormularioJquery()">
+            <div class="card border-dark mb-3" style="max-width: 100%;">
+                <div class="card-header bg-transparent border-success">Formulario de registro </div>
+
+                <div class="card-body text-dark">
+                    <div id="campoNombre">
+                        <h5 class="card-title">Nombre mascota</h5>
+                        <input class="form-control" type="text" id="nombre" required>
+                    </div>
+                    <div id="campoVacuna">
+                        <h5 class="card-title">Vacuna</h5>
+                        <input class="form-control" type="text" id="vacuna">
+                    </div>
+                    <div id="campoPrecio">
+                        <h5 class="card-title">Precio</h5>
+                        <input class="form-control" type="number" id="precio">
+                    </div>
+                    <div id="campoFecha">
+                        <h5 class="card-title">Fecha</h5>
+                        <input class="form-control" type="date" id="fecha">
+                    </div>
+                    <div id="campoDosis">
+                        <h5 class="card-title">Proxima dosis</h5>
+                        <input class="form-control" type="date" id="proxDosis">
+                    </div>
+
+                </div>
+                <div id="errores" class="container"></div>
+
+                <div class="card-footer bg-transparent border-dark">
+                    <input class="btn btn-primary" type="submit">
+                </div>
+
+            </div>
+        </form>
     </div>
      <!-- <div class="container-expand">
         <br><br>
