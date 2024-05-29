@@ -30,8 +30,8 @@ function obtenerFormulario() {
   }
 
 
-  console.log("nombre " + nombre + " vacuna " + vacuna + " precio " + precio + " fecha " + fecha + " proxDosis " + proxDosis)
-  console.log("largo nombre " + nombre.length + ", largo  vacuna " + vacuna.length + ", largo  precio " + precio.length + ", largo  fecha " + fecha.length + ", largo  proxDosis " + proxDosis.length)
+  console.log("nombre " + nombre + " cuadro " + vacuna + " precio " + precio + " fecha " + fecha)
+  console.log("largo nombre " + nombre.length + ", largo  Cuadro " + vacuna.length + ", largo  precio " + precio.length + ", largo  fecha " + fecha.length + ", largo  proxDosis " + proxDosis.length)
   return false
 }
 
