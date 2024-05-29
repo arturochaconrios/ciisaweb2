@@ -35,7 +35,6 @@ function obtenerFormulario() {
   return false
 }
 
-
 function obtenerFormularioJquery(){
 
 //alert("accion desde el Formulario")
@@ -56,7 +55,6 @@ if(precio.length<=0){
 if(fecha.length<=0){
   errores = errores + "Nombre es campo requerido o debe ser mayor a un caracter"  
 }
-
 if (errores != "") {
   //alert(errores)
   //$("#errores").html(errores) 
@@ -74,5 +72,4 @@ if (errores != "") {
   });
 }
 return false
-
 }
