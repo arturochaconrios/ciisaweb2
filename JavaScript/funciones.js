@@ -38,24 +38,25 @@ function obtenerFormulario() {
 function obtenerFormularioJquery(){
 
 //alert("accion desde el Formulario")
-var nombre = $("#nombre").val()
-var nombre = $("#cuadro").val()
-var nombre = $("#precio").val()
-var nombre = $("#fecha").val()
+var nombre = $("#nombre").val(5)
+var nombre = $("#cuadro").val(5)
+var nombre = $("#precio").val(7)
+var nombre = $("#fecha").val(9)
 var errores = ""
+
 if(nombre.length<=1){
   errores = errores + "Nombre es campo requerido o debe ser mayor a un caracter"  
 }
-if(cuadro.length<=1){
+if(cuadro.length<=0){
   errores = errores + "cuadro es campo requerido o debe ser mayor a un caracter"  
 }
-if(precio.length<=1){
+if(precio.length<=0){
   errores = errores + "precio es campo requerido o debe ser mayor a un caracter"  
 }
-if(fecha.length<=1){
+if(fecha.length<=0){
   errores = errores + "fecha es campo requerido o debe ser mayor a un caracter"  
 }
-if (errores != "") {
+if (errores != ""){
   //alert(errores)
   //$("#errores").html(errores) 
   Swal.fire({
