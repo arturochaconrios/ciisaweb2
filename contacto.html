@@ -38,74 +38,14 @@
       </nav>   
       <br><br>
       <!-- CONTACTO-->
-      <form onsubmit="return" obtenerformulario()>
-          <div class="col-md-2"></div>
-          <div class="col-md-3">
-                <label for="validationCustom01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationCustom01" value="" required>
-                <div class="valid-feedback">            
-                </div>
-          </div>    
-          <div class="col-md-3">
-                <label for="validationCustom02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationCustom02" value="" required>
-                <div class="valid-feedback">
-                </div>
-          </div>
-          <div class="col-md-3">
-                  <label for="validationCustomUsername" class="form-label">Correo</label>
-                  <div class="input-group has-validation">
-                      <span class="input-group-text" id="inputGroupPrepend">@</span>
-                      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                      <div class="invalid-feedback">            
-                      </div>
-                  </div>
-          </div>
-          <div><br><br></div>
-          <div class="col-md-2"></div>
-          <div class="col-md-3">
-                      <label for="validationCustom03" class="form-label">Ciudad</label>
-                      <input type="text" class="form-control" id="validationCustom03" required>
-                      <div class="invalid-feedback">
-                      </div>
-          </div>
-          <div class="col-md-3">
-                  <label for="validationCustom04" class="form-label">Galeria</label>
-                  <select class="form-select" id="validationCustom04" required>
-                      <option selected disabled value="">Ingrese Opcion</option>
-                      <option>Imagenes de Exterior</option>
-                      <option>Imagenes de Interior</option>
-                  </select>
-                  <div class="invalid-feedback">
-                     Galeria
-                  </div>
-          </div>
-          <div class="col-md-3">
-                    <label for="validationCustom05" class="form-label">Valor</label>
-                    <input type="text" class="form-control" id="validationCustom05" required>
-                    <div class="invalid-feedback">
-                          Please provide a valid zip.
-                    </div>
-          </div>
-          <div><br><br></div>
-          <div class="col-2"></div>
-          <div class="col-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                          Aceptar términos y condiciones
-                        </label>
-                        <div class="invalid-feedback">
-                          Aceptar términos y condiciones.
-                        </div>
-                    </div>
-          </div>
-          <br><br>
-          <div class="col-2"></div>
-          <div class="col-10">
-                  <button class="btn btn-primary" type="submit">Enviar</button>
-          </div>
+      <div class="container">
+      <h1>Formulario de Regsitro</h1>
+      <form onsubmit="return obtenerFormularioJquery()">
+        <label>Nombre</label>
+        <input type="text" id="nombre" required>
+        <input type="submit">
       </form>
+    </div>
       <div class="container-expand">
         <br><br>
       </div>
@@ -237,5 +177,5 @@
       </div> 
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-<script>src="/JavaScrip/>funciones.js "</script>
+<script src="JavaScrip/funciones.js" ></script>
 </html>
