@@ -42,18 +42,18 @@ var nombre = $("#nombre").val(5)
 var nombre = $("#cuadro").val(5)
 var nombre = $("#precio").val(7)
 var nombre = $("#fecha").val(9)
-var errores = ""
+//var errores = ""
 
 if(nombre.length<=1){
   errores = errores + "Nombre es campo requerido o debe ser mayor a un caracter"  
 }
-if(cuadro.length<=0){
+if(cuadro.length<=1){
   errores = errores + "cuadro es campo requerido o debe ser mayor a un caracter"  
 }
-if(precio.length<=0){
+if(precio.length<=1){
   errores = errores + "precio es campo requerido o debe ser mayor a un caracter"  
 }
-if(fecha.length<=0){
+if(fecha.length<=1){
   errores = errores + "fecha es campo requerido o debe ser mayor a un caracter"  
 }
 if (errores != ""){
