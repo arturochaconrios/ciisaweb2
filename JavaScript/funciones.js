@@ -44,17 +44,17 @@ var precio = $("#precio").val()
 var fecha = $("#fecha").val()
 var errores = ""
 
-if(nombre.length<=9){
-  errores = errores + "Nombre es campo requerido o debe ser mayor a 9 caracteres <br>"  
+if(nombre.length<=7){
+  errores = errores + "Nombre es campo requerido o debe Incluir Nombre y Apellido <br>"  
 }
 if(cuadro.length<=5){
-  errores = errores + "Cuadro es campo requerido o debe ser mayor a 5 caracter <br>"  
+  errores = errores + "Cuadro es campo requerido o debe incluir el nombre del cuadro <br>"  
 }
 if(precio.length<=3){
-  errores = errores + "Precio es campo requerido o debe ser mayor a 3 caracteres <br>"  
+  errores = errores + "Precio es campo requerido, Ingresar el Monto a Pagar <br>"  
 }
 if(fecha.length<=0){
-  errores = errores + "Fecha es campo requerido o debe ser mayor a un caracter"  
+  errores = errores + "Fecha es campo requerido, incluir fecha de Retiro"  
 }
 if (errores != ""){
 
