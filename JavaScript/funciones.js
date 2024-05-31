@@ -38,38 +38,43 @@ function obtenerFormulario() {
 function obtenerFormularioJquery(){
 
 //alert("accion desde el Formulario")
-var nombre = $("#nombre").val(5)
-var nombre = $("#cuadro").val(5)
-var nombre = $("#precio").val(7)
-var nombre = $("#fecha").val(9)
-//var errores = ""
+var nombre = $("#nombre").val()
+var cuadro = $("#cuadro").val()
+var precio = $("#precio").val()
+var fecha = $("#fecha").val()
+var errores = ""
 
-if(nombre.length<=1){
-  errores = errores + "Nombre es campo requerido o debe ser mayor a un caracter"  
+if(nombre.length<=9){
+  errores = errores + "Nombre es campo requerido o debe ser mayor a 9 caracteres <br>"  
 }
-if(cuadro.length<=1){
-  errores = errores + "cuadro es campo requerido o debe ser mayor a un caracter"  
+if(cuadro.length<=5){
+  errores = errores + "Cuadro es campo requerido o debe ser mayor a 5 caracter <br>"  
 }
-if(precio.length<=1){
-  errores = errores + "precio es campo requerido o debe ser mayor a un caracter"  
+if(precio.length<=3){
+  errores = errores + "Precio es campo requerido o debe ser mayor a 3 caracteres <br>"  
 }
-if(fecha.length<=1){
-  errores = errores + "fecha es campo requerido o debe ser mayor a un caracter"  
+if(fecha.length<=0){
+  errores = errores + "Fecha es campo requerido o debe ser mayor a un caracter"  
 }
 if (errores != ""){
-  //alert(errores)
-  //$("#errores").html(errores) 
+
   Swal.fire({
-      title: "Error!",
-      html: errores,
-      icon: "error"
+    position: "top-center",
+    icon: "error",
+    title: "ERROR",
+    showConfirmButton: true,
+    html: errores
   });
+
 } else {
   $("#errores").empty()
   Swal.fire({
-      title: "Confirmacion!",
-      text: "Tu informacion a sido enviada exitosamente!",
-      icon: "success"
+    position: "top-ceter",
+    icon: "success",
+    title: "Confirmación",
+    text: "Informacion enviada exitosamente!",
+    showConfirmButton: false,
+    timer: 4500
   });
 }
 return false
