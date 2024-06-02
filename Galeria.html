@@ -745,7 +745,21 @@
                 <div><br><br></div><br>
           </div> 
   <!-- prueba -->
- 
+ <div class="container">
+    <table id="consulta" class="table table-striped table-hover">
+        <tr>
+            <th scope="col">a</th>
+            <th scope="col">b</th>
+            <th scope="col">c</th>
+            <th scope="col">d</th>
+            <th scope="col">d</th>
+            <th scope="col">f</th>
+        </tr>
+    </table>
+
+
+ </div>
+
   <button>
     <a href="#" class="fixed-bottom btn btn-primary ">Subir Pagina</a>
   </button>
@@ -881,5 +895,20 @@
       </div>      
    
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+       <script>
+        $(document).ready(function(){
+
+            $.ajax({
+                url:'https://collectionapi.metmuseum.org/public/collection/v1/objects/[objectID]',
+                dataType:'jason',
+                success:function(data){
+                    console.log(data)
+                }
+            }
+
+            )
+        })
+       </script>
 </body>
 </html>
