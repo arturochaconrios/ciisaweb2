@@ -5,22 +5,24 @@ $(document).ready(function(){
                     dataType:'jason',
                     success:function(data){
     
-                        var galerias=data.constituents
-  
-                        new datatable('#galerias1',{
-                        "data": galerias,
-                        "columns": [
-                          {"data": 'artista'},
-                          {"data": 'nombre'}, 
-                        ],
-                        loyout:{
-                          topstart:{
-                            buttons:['copyhtml5','excekhtml5','csvhtml5','pdfhtml5']
-                          }
-                        }
-                        })
+                        var galerias=data.data
+   
+                new datatable('#galerias1',{     
+                                                    
+                    "data": data,
+                    "columns": [
+                      {"data": 'artista'},
+                      {"data": 'nombre'}, 
+                      {"data": 'Tipo'},
+                      {"data": 'medidas'},
+                    ],
+                    loyout:{
+                      topStart:{
+                        button:['copyhtmnl5', 'excelhtml5','csvhtml5','pdfhtml5']
                       }
-                    })
+                    }
                   })
-                
-  
+                    }
+                  })
+                  })
+                  
