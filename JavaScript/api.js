@@ -1,7 +1,7 @@
 $(document).ready(function(){
     //var datatable="",
                 $.ajax({
-                    url:'https://collectionapi.metmuseum.org/public/collection/v1/objects/[objectID]',
+                    url:'https://huachitos.cl/api/animales',
                     dataType:'jason',
                     success:function(data){
     
@@ -9,12 +9,12 @@ $(document).ready(function(){
    
                 new datatable('#galerias1',{     
                                                     
-                    "data": data,
+                    "data": galerias,
                     "columns": [
-                      {"data": 'artista'},
-                      {"data": 'nombre'}, 
+                      {"data": 'Artista'},
+                      {"data": 'Nombre'}, 
                       {"data": 'Tipo'},
-                      {"data": 'medidas'},
+                      {"data": 'Medidas'},
                     ],
                     loyout:{
                       topStart:{
