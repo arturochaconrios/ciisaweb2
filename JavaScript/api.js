@@ -7,7 +7,7 @@
                         success:function(data){
                             var galeria = data.data
                 
-                           new DataTable('#galerias1', {
+                          new DataTable('#galerias1', {
                                 "data": galeria,
                                 "columns": [
                                     {"data" : 'Imagen'},
