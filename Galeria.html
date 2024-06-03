@@ -746,11 +746,9 @@
           </div> 
   <!-- prueba -->
   
-  <div class="py-5 d-flex align-items-center justify-content-center">
-    <h2 class="fw-bold">Informacion Galerias</h2>
-</div>
-<div>
-    <table id="galerias1" class="display justify-content-center" style="width:100%">
+  <div class="container mt-5">
+    <h1>Busca tu cuadro</h1>
+    <table id="galeria1">
         <thead>
             <tr>
                 <th scope="col">Titulo</th>
@@ -760,8 +758,15 @@
             </tr>
         </thead>
         <tbody id="galerias2">
-
         </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col">Titulo</th>
+                <th scope="col">Artista</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Referencia</th>
+            </tr>
+        </tfoot>
     </table>
 </div>
 
@@ -899,19 +904,58 @@
         </footer>
       </div>      
    -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script scr="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
-      <script scr="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.js"></script>
-      <script scr="https://cdn.datatables.net/buttons/3.0.2/js/buttons.dataTables.js"></script>
-      <script scr="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-      <script scr="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-      <script scr="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-      <script scr="https://cdn.datatables.net/buttons/3.0.2/js/buttons.html5.min.js"></script>
-      <script src="JavaScript/api.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-       crossorigin="anonymous"></script> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+   crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+
+<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js" ></script>
+<script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.js" ></script>
+<script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.dataTables.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js" ></script>
+<script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.html5.min.js" ></script>
+<script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.print.min.js" ></script>
+
        
+       <script>
+        $(document).ready(function () {
+            //ESTO SE EJECUTARA UNA VEZ CARGADA LA PAGINA
+            //AJAX
+            $.ajax({
+                url: 'https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,main_reference_number',
+                dataType: 'json',
+                success: function (informacion) {
+                    //console.log(data)
+                    var galeria = informacion.data
+                    for (var i = 0; i < galeria.length; i++) {
+                        var fila = ""
+                        
+                        fila = "<tr><td><img src='" + galeria[i].Titulo + "' width='50'  height='50'></td><td>" + galeria[i].artista + "</td><td>" + galeria[i].fecha + "</td><td>" + galeria[i].referencia + "</td></tr>"
+                        console.log(fila)
+                        $("galeria2").append(fila)
+
+                    }
+                    //DATA TABLE
+                    let mitabla = new DataTable('#galeria1', {
+                    layout: {
+                        topStart: {
+                            buttons: [ 'csv', 'excel', 'pdf']
+                        }
+                    }
+                });
+                   
+          
+                }
+          
+            })
+            
+
+        })
+    </script>
+      
 </body>
 
 
