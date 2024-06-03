@@ -922,13 +922,12 @@
        
        <script>
         $(document).ready(function () {
-            //ESTO SE EJECUTARA UNA VEZ CARGADA LA PAGINA
-            //AJAX
+        
             $.ajax({
                 url: 'https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,main_reference_number',
                 dataType: 'json',
                 success: function (informacion) {
-                    //console.log(data)
+
                     var galeria = informacion.data
                     for (var i = 0; i < galeria.length; i++) {
                         var fila = ""
@@ -938,7 +937,6 @@
                         $("galeria2").append(fila)
 
                     }
-                    //DATA TABLE
                     let mitabla = new DataTable('#galeria1', {
                     layout: {
                         topStart: {
