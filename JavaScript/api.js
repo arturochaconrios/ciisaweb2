@@ -3,16 +3,17 @@
                   $(document).ready(function(){
                     $.ajax({
                         url:'https://huachitos.cl/api/animales',
-                        datatype:'json',
+                        datatype:'JSON',
                         success:function(data){
                             var galeria = data.data
                 
                            new DataTable('#galerias1', {
                                 "data": galeria,
                                 "columns": [
-                                    {"data" : 'Artista'},
-                                    {"data" : 'Tipo'},
-                                    {"data" : 'Genero'},
+                                    {"data" : 'Imagen'},
+                                    {"data" : 'Nombre'},
+                                    {"data" : 'Edad'},
+                                    {"data" : 'Estado'},
                                 ],
                                 layout: {
                                     topStart: {
@@ -24,3 +25,5 @@
                          } 
                     })
                 })
+
+              
