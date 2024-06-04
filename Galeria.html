@@ -926,18 +926,19 @@
             $.ajax({
                 url: 'https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,main_reference_number',
                 dataType: 'json',
-                success: function (informacion) {
+                success: function (data) {
 
-                    var galeria = informacion.data
-                    for (var i = 0; i < galeria.length; i++) {
-                        var fila = ""
-                        
-                        fila = "<tr><td><img src='" + galeria[i].Titulo + "' width='50'  height='50'></td><td>" + galeria[i].artista + "</td><td>" + galeria[i].fecha + "</td><td>" + galeria[i].referencia + "</td></tr>"
-                        console.log(fila)
-                        $("galeria2").append(fila)
-
-                    }
-                    let mitabla = new DataTable('#galeria1', {
+                    var galeria = data.data
+                    new DataTable('#galeria1', {
+                "data": galeria,
+                "columns": [
+                    {"data" : 'title'},
+                    {"data" : 'artist_display'},
+                    {"data" : 'date_display'},
+                    {"data" : 'main_reference_number'}
+                   
+                ],
+                    
                     layout: {
                         topStart: {
                             buttons: [ 'csv', 'excel', 'pdf']
