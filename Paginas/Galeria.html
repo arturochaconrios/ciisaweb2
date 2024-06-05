@@ -125,15 +125,19 @@
                                 <table class="table">
                                       <thead>
                                            <tr>
+                                              <th scope="col">Accion</th>
                                               <th scope="col">#</th>
                                               <th scope="col">Artista</th>
                                               <th scope="col">Descripcion</th>
                                               <th scope="col">Medidas</th>
+                                             
                                            </tr>
                                       </thead>
                                       <tbody>
                                            <tr>
-                                              <th scope="row">1</th>
+                                            <td><button onclick="eliminaarfila()" class="btn btn-outline-danger">Eliminar</button></td>
+                                            <th scope="row">1</th>
+                                            
                                               <td>Mon Laferte</td>
                                               <td>Océanos sin plásticos</td>
                                               <td class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">El mural que Mon Laferte pintó en el porteño Cerro Alegre </td>
@@ -744,9 +748,34 @@
                 </div>
                 <div><br><br></div><br>
           </div> 
+          <br>
+ <!-- tablas nueva -->
+ <div class="container">
+ <table class="table">
+    <thead>
+         <tr>
+            <th scope="col">#</th>
+            <th scope="col">Artista</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Medidas</th>
+            <th scope="col">Accion</th>
+           
+         </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mon Laferte</td>
+            <td>Océanos sin plásticos</td>
+            <th scope="col">Accion</th>
+            <td><button onclick="eliminaarfila()" class="btn btn-outline-danger">Eliminar</button></td>
+
+        </div>    
+<br><br>
   <!-- prueba -->
   
   <div class="container mt-5">
+    <br>
     <h1>Busca tu cuadro</h1>
     <table id="galeria1">
         <thead>
