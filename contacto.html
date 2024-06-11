@@ -6,6 +6,8 @@
     <link rel="icon" href="Imagenes/LOGO1.jpg" type="image/x-icon">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel="stylesheet" href="Style/style.css">
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
   
 </head>
 <body class="p-3 mb-2 bg-body-secondary">
@@ -37,33 +39,33 @@
       <br><br>
       <!-- CONTACTO-->
       <div class="container">
-        <form onsubmit="return obtenerFormularioJquery()">
+        <form action="https://send.pageclip.co/dgkI49FQRBsGRicghxxIdjgBVbbIAgKq" class="pageclip-form" method="post">
             <div class="card border-dark mb-3" style="max-width: 100%;">
                 <div class="card-header bg-transparent border-success">Formulario de registro </div>
 
                 <div class="card-body text-dark">
                     <div id="campoNombre">
                         <h5 class="card-title">Nombre Comprador</h5>
-                        <input class="form-control" type="text" id="nombre" >
+                        <input class="form-control" type="text" id="nombre"  name="nombre">
                     </div>
                     <div id="campoCuadro">
                         <h5 class="card-title">Cuadro</h5>
-                        <input class="form-control" type="text" id="cuadro" >
+                        <input class="form-control" type="text" id="cuadro" name="cuadro">
                     </div>
                     <div id="campoPrecio">
                         <h5 class="card-title">Precio</h5>
-                        <input class="form-control" type="number" id="precio">
+                        <input class="form-control" type="number" id="precio" name="precio">
                     </div>
                     <div id="campoFecha">
                         <h5 class="card-title">Fecha Retiro</h5>
-                        <input class="form-control" type="date" id="fecha">
+                        <input class="form-control" type="date" id="fecha" name="fecha">
                     </div>
                 </div>
                 <div id="errores" class="container"></div>
 
-                <div class="card-footer bg-transparent border-dark">
-                    <input class="btn btn-primary" type="submit">
-                </div>
+                <button type="submit" class="pageclip-form__submit">
+                  <span>Send</span>
+                </button>
 
             </div>
         </form>
@@ -203,6 +205,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="JavaScript/funciones.js"></script>
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   
 </body>
 
