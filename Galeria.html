@@ -768,7 +768,7 @@
             <td>Mon Laferte</td>
             <td>Océanos sin plásticos</td>
             <th scope="col">Accion</th>
-            <td><button onclick="eliminaarfila('#fila1')" class="btn btn-outline-danger">Eliminar</button></td>
+            <td><button onclick="eliminaarfila(this)" class="btn btn-outline-danger">Eliminar</button></td>
 </table>
 <button onclick="agregarfila()" class="btn btn-outline-primary">Agregar</button>
  </div>    
@@ -985,8 +985,9 @@
 
         })
 
-        function eliminaarfila(id){
-          $(id).remove
+        function eliminaarfila(element){
+             console.log(element)
+            $(element).parent().parent().remove
 
         }
          function agregarfila(){
@@ -995,7 +996,7 @@
           var artista="<td scope='col'>MonLaferte</td>"
           var Descripcion="<td scope='col'>Fotografa Premiun</td>"
           var Medidas="<td scope='col'>150 cm X 200 cm</td>"
-          var Accion=" <td scope='col'><button onclick=\"eliminaarfila('#fila1')\" class=\"btn btn-outline-danger\">Eliminar</button></td>" 
+          var Accion=" <td scope='col'><button onclick=\"eliminaarfila(this)\" class=\"btn btn-outline-danger\">Eliminar</button></td>" 
           var htmlfila="<tr id='fila0'>"+N+artista+Descripcion+Medidas+Accion+"</tr>" 
 
           $("#tablan").append("")
