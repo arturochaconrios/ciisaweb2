@@ -1043,7 +1043,7 @@
 
       
 
-          $("#tablan").append(htmlfila)
+         
          }
           function agregarfilatabla(div){
                console.log(div)
@@ -1053,7 +1053,7 @@
                var Medidas="<td scope='col'>"+div[3].value+"</td>"
                var fechar="<td scope='col'>"+div[4].value+"</td>"
                var Accion="<td scope='col'><button onclick=\"eliminaarfila(this)\"class=\"btn btn-outline-danger\">Eliminar</button></td>" 
-               var htmlfila="<tr>"+fechas+artista+Descripcion+Medidas+fechar+Accion+"</tr>"  
+               var htmlfila="<tr >"+fechas+artista+Descripcion+Medidas+fechar+Accion+"</tr>"  
 
                $("#tablan").append(htmlfila)
             }
