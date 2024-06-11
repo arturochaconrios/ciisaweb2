@@ -997,7 +997,7 @@
          function agregarfila(){
 
             Swal.fire({
-  title: "<strong>HTML <u>Formulario Ingreso de Datos</u></strong>",
+  title: "<strong><u>Formulario Ingreso de Datos</u></strong>",
   icon: "info",
   html: `
   <div id="form-Sweet" class="card border-dark mb-3" style="max-width: 100%;">
@@ -1061,7 +1061,7 @@
                var Accion="<td scope='col'><button onclick=\"eliminaarfila(this)\"class=\"btn btn-outline-danger\">Eliminar</button></td>" 
                var htmlfila="<tr>"+fechas+artista+Descripcion+Medidas+fechar+Accion+"</tr>"  
 
-}
+}               $("#tablan").append(htmlfila)
     </script>
       
 </body>
