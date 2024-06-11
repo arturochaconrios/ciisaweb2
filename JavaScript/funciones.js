@@ -1,10 +1,4 @@
-function miPrimeraChamba(desde, hasta) {
-  alert("DESDE MI PRIMERA FUNCION")
-  var contador = desde
-  for (contador; contador <= hasta; contador++) {
-      console.log(contador)
-  }
-}
+
 function obtenerFormulario() {
   //alert("ACCION DESDE EL FORMULARIO")
   var nombre = document.getElementById("nombre").value
