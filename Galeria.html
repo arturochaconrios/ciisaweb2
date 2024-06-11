@@ -987,7 +987,7 @@
 
         function eliminaarfila(element){
              console.log(element)
-            $(element).parent().parent().remove
+            $(element).parent().parent().remove()
 
         }
          function agregarfila(){
@@ -996,7 +996,7 @@
           var artista="<td scope='col'>MonLaferte</td>"
           var Descripcion="<td scope='col'>Fotografa Premiun</td>"
           var Medidas="<td scope='col'>150 cm X 200 cm</td>"
-          var Accion=" <td scope='col'><button onclick=\"eliminaarfila(this)\" class=\"btn btn-outline-danger\">Eliminar</button></td>" 
+          var Accion="<td scope='col'><button onclick=\"eliminaarfila(this)\" class=\"btn btn-outline-danger\">Eliminar</button></td>" 
           var htmlfila="<tr>"+N+artista+Descripcion+Medidas+Accion+"</tr>" 
 
           $("#tablan").append("htmlfila")
