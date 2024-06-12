@@ -1051,13 +1051,13 @@ function eliminaarfila(element){
          }
           function agregarfilatabla(div){
 
-               var fechas ="<td>"+div[0].value+"</td>"
-               var Artista="<td>"+div[1].value+"</td>"
-               var Descripcion="<td>"+div[2].value+"</td>"
-               var Medidas="<td>"+div[3].value+"</td>"
-               var fechar="<td>"+div[4].value+"</td>"
+               var fechas ="<td>" + div[0].value + "</td>"
+               var Artista="<td>" + div[1].value + "</td>"
+               var Descripcion="<td>" + div[2].value + "</td>"
+               var Medidas="<td>" + div[3].value + "</td>"
+               var fechar="<td>" + div[4].value + "</td>"
                var Accion="<td><button onclick=\"eliminaarfila(this)\"class=\"btn btn-outline-danger\">Eliminar</button></td>" 
-               var htmlfila="<tr >" +fechas +Artista +Descripcion +Medidas +fechar +Accion + "</tr>"  
+               var htmlfila="<tr >" + fechas + Artista + Descripcion + Medidas + fechar + Accion + "</tr>"  
 
                $("#tablan").append(htmlfila)
             }
